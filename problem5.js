@@ -7,10 +7,10 @@ function resultReport(marks) {
   let failSubjects = 0;
 
   for (const mark of marks) {
-    total += mark;
+    total = total + mark;
     if (mark < 40) {
       failSubjects++;
-    } else if ((mark) => 40) {
+    } else if (mark >= 40) {
       passSubjects++;
     }
   }
